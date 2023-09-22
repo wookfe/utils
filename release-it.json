@@ -1,0 +1,19 @@
+{
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "npm": {
+    "publish": true,
+    "skipChecks": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "header": "# Changelog",
+      "infile": "CHANGELOG.md"
+    },
+    "release-it-yarn-workspaces": {
+      "skipChecks": true
+    }
+  }
+}
