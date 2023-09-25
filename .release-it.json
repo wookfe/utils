@@ -2,16 +2,19 @@
   "git": {
     "commitMessage": "chore: release v${version}"
   },
+  "github": {
+    "release": false
+  },
   "npm": {
     "publish": true,
     "skipChecks": false
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": "angular",
-      "header": "# Changelog",
       "infile": "CHANGELOG.md",
+      "header": "# Changelog",
       "preset": {
+        "name": "angular",
         "types": [
           { "type": "feat", "section": "Features" },
           { "type": "fix", "section": "Bug Fixes" },
@@ -21,12 +24,8 @@
           { "type": "refactor", "hidden": true },
           { "type": "perf", "hidden": true },
           { "type": "test", "hidden": true }
-        ],
-        "ignoreRecommendedBump": "true"
+        ]
       }
-    },
-    "release-it-yarn-workspaces": {
-      "skipChecks": true
     }
   }
 }
