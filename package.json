@@ -1,6 +1,6 @@
 {
   "name": "@wookfe/utils",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "wook 前端工具库",
   "main": "lib/index.js",
   "module": "esm/index.js",
